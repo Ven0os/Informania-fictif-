@@ -88,11 +88,11 @@ p {
 }
 
 .Object {
-  margin-right: 5px;
+  margin-right: 20px;
   font-weight: bold;
 }
 .Val {
-  margin-right: 5px;
+  margin-right: 20px;
   font-weight: bold;
 }
 
@@ -117,45 +117,44 @@ p:hover {
 @media screen and (max-width: 882px)
 {
 p {
-  font-size: 8.2vw;
+  font-size: 8.7vw;
   display: flex;
   flex-direction: column;
   text-align: center;
   line-height: 1.25em;
 }
 #Gérant1 {
-  margin-top: 500px;
-  max-width: 500px;
+  max-width: 300px;
 }
 
 #salariés {
-  margin-top: 200px;
+  max-width: 300px;
+}
+
+.container {
+  display: block;
 }
 
 .Prix {
 margin-left: 0;
 }
 
-body {
-  width: 882px;
-}
 li{
   line-height: 1;
-  font-size: 30px;
-  margin-top: 50px;
+  font-size: 20px;
 }
 .Histoire {
   margin-left: 0;
 }
 
 .Object {
-  margin-right: 0;
+  margin-right: 0px;
 }
 .Val {
-  margin-right: 0;
+  margin-right: 0px;
 }
 .full {
-  width: 85%;
+  width: 90%;
 }
 }
 
@@ -165,7 +164,7 @@ li{
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (min-width: 882px) and (max-width: 1200px) {
   p {
     font-size: 8,5vw;
     display: flex;
