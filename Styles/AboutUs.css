@@ -1,0 +1,210 @@
+body {
+  background-image: url("../Images/fondbleu.png")
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.divImg
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#Titre1 {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  border: 4px;
+  border-style: solid;
+  border-color: #e45505;
+  background: linear-gradient(270deg, #e45505, #3bb6fb, #3bb6fb, #e45505);
+  background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.border {
+	font-size: 1.6rem;
+	place-items: center;
+	border: 5px solid;
+	padding: 10px;
+}
+
+.full {
+	border-image: linear-gradient(180deg, #036399, #3bb6fb) 1;
+  background-color: #222;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#Gérant1 {
+  border-radius: 50%;
+  max-width: 500px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#salariés {
+  border-radius: 50%;
+  max-width: 500px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+p {
+  line-height: 2;
+  font-size: 25px;
+  color: #e45505;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid;
+}
+
+.Histoire {
+  margin-left: 80px;
+  font-weight: bold;
+}
+
+.Prix {
+  margin-left: 80px;
+  font-weight: bold;
+}
+
+.Object {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.Val {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+li {
+  text-align: center;
+  color: #e45505;
+  font-size: 25px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+p:hover {
+  box-shadow: 10px 10px 10px 10px #036399;
+}
+
+.Subtitle {
+  border-image: linear-gradient(180deg, #036399, #3bb6fb) 1;
+  background-color: #222;
+  color: white;
+}
+
+@media screen and (max-width: 882px)
+{
+p {
+  font-size: 8.2vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.25em;
+}
+#Gérant1 {
+  margin-top: 500px;
+  max-width: 500px;
+}
+
+#salariés {
+  margin-top: 200px;
+}
+
+.Prix {
+margin-left: 0;
+}
+
+body {
+  width: 882px;
+}
+li{
+  line-height: 1;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.Histoire {
+  margin-left: 0;
+}
+
+.Object {
+  margin-right: 0;
+}
+.Val {
+  margin-right: 0;
+}
+.full {
+  width: 85%;
+}
+}
+
+@media screen and (min-width: 360px) {
+  .Prix {
+  margin-bottom: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  p {
+    font-size: 8,5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.25em;
+  }
+  #Gérant1 {
+    margin-top: 500px;
+  }
+
+  #salariés {
+    margin-top: 200px;
+  }
+
+  .Prix {
+  margin-bottom: 230px;
+  margin-left: 0;
+  }
+
+  body {
+    width: 1024px;
+  }
+  li{
+    line-height: 1;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .Histoire {
+    margin-left: 0;
+  }
+
+  .Object {
+    margin-right: 0;
+  }
+  .Val {
+    margin-right: 0;
+  }
+  .full {
+    width: 85%;
+  }
+  }
