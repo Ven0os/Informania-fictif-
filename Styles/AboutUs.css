@@ -1,5 +1,7 @@
 body {
-  background-image: url("../Images/fondbleu.png")
+  background-image: url("../Images/fondbleu.png");
+  background-size:cover;
+
 }
 
 .container
@@ -129,7 +131,10 @@ p {
 
 .container {
   display: block;
-  margin-bottom: 130px;
+}
+
+.contres {
+  margin-bottom: 100px;
 }
 
 .Prix {
@@ -154,7 +159,7 @@ li{
 }
 }
 
-@media screen and (min-width: 410px) and (max-width: 882px) {
+@media screen and (min-width: 410px) and (max-width: 912px) {
   p {
     font-size: 6vw;
     display: flex;
@@ -165,13 +170,23 @@ li{
 
   .container {
     display: block;
-    margin-bottom: 130px;
+  }
+
+  .contres {
+    margin-bottom: 100px;
+  }
+
+  .contentfooter .coord {
+    display: block;
   }
 
   .divImg {
     text-align: center;
+    flex-direction: column;
   }
 
+#Gérant1 {
+}
   .Prix {
   margin-left: 0;
   }
@@ -195,7 +210,7 @@ li{
 
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1014px) {
   p {
     font-size: 8,5vw;
     display: flex;
@@ -214,6 +229,10 @@ li{
   .Prix {
   margin-left: 80px;
   margin-bottom: 200px;
+  }
+
+  .divImg {
+    margin-top: 1000px;
   }
 
   li{
