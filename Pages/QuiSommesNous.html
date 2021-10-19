@@ -1,120 +1,256 @@
-<!DOCTYPE html>
-<html>
+body {
+  background-image: url("../Images/fondbleu.png");
+  background-size:cover;
 
-    <head>
-		<html lang="fr">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Qui sommes-nous</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="StyleSheet" href="../Styles/Navbar.css">
-    <link rel="stylesheet" href="../Styles/AboutUs.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+}
 
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
 
-	</head>
+.divImg
+{
+    display: flex;
+    flex-direction: column;
+}
 
-<body>
+#Titre1 {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  border: 4px;
+  border-style: solid;
+  border-color: #e45505;
+  background: linear-gradient(270deg, #e45505, #3bb6fb, #3bb6fb, #e45505);
+  background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
 
-  <nav class="navbar">
- 	<ul class="navbar-menu">
- 		<li class="navbar-item logo">
- 			<a href="#Icon" class="navbar-link">
- 			  <span class="navbar-title"><img class="Logo1" alt="Logo corporation" src="../Images/Logo1.png"></span>
- 			  <i class="fas fa-chevron-right navbar-icon"></i>
- 			</a>
- 		</li>
- 	  <li class="navbar-item">
- 		<a href="InforMania.html" class="navbar-link">
- 		  <i class="fas fa-solid fa-atom navbar-icon"></i>
- 		  <span class="navbar-title">Accueil</span>
- 		</a>
- 	  </li>
- 	  <li class="navbar-item">
- 		<a href="Pages/Services.html" class="navbar-link">
- 		  <i class="fas fa-solid fa-desktop navbar-icon"></i>
- 		  <span class="navbar-title">Services</span>
- 		</a>
- 	  </li>
- 	  <li class="navbar-item">
- 		<a href="Pages/AboutUs.html" class="navbar-link">
- 		  <i class="fas fa-user navbar-icon"></i>
- 		  <span class="navbar-title">Qui-sommes-nous?</span>
- 		</a>
- 	  </li>
- 	  <li class="navbar-item">
- 		<a href="Pages/Contact.html" class="navbar-link">
- 		  <i class="fas fa-phone navbar-icon"></i>
- 		  <span class="navbar-title">Contact</span>
- 		</a>
- 	  </li>
- 	  <li class="navbar-item">
- 		<a href="Pages/Maketing.html" class="navbar-link">
- 		  <i class="fas fa-solid fa-image navbar-icon"></i>
- 		  <span class="navbar-title">Marketing</span>
- 		</a>
- 	  </li>
- 	  <li id="Navbar1" class="navbar-item">
- 		<a href="#Titre" class="navbar-link">
- 		  <i class="fas fa-sign-out-alt navbar-icon"></i>
- 		  <span class="navbar-title">Exit</span>
- 		</a>
- 	  </li>
- 	</ul>
-   </nav>
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
-   <div>
-   <h? id="Titre1">Qui sommes-nous?</h?>
- </div>
- <hr>
-   <div class="container">
-   <div>
-       <p class="Histoire">
-         <h? class="full border">Histoire</h?><br>
-         Tout commence par une formation en Développement web.<br>
-         Suite à l'obtention du diplôme Marty décide de créer sa société en tant qu'auto-entrepreneur.<br>
-         Après plusieurs tentatives infructueuses, il décide d'ouvrir une société de vente de composants informatiques en ligne.<br>
-         Grâce à son savoir-faire et à son équipe composée de 3 salariés compétents, Francis, Kevin et Aymerick.<br>
-         Il parvient à faire d'InforMania une des plus grandes sociétés réputées de France en vente à distance.
-       </p>
-       <hr>
-       <p class="Prix">
-        <h? class="full border">Prix compétitifs</h?><br>
-         Grâce à nos relations et a nos fournisseurs nous sommes en mesure de fournir des prix très attractifs.<br>
-         Nous mettons un point d'honneur à faire de nos produits les moins chers du marché.<br>
-      </p>
-   </div>
+.border {
+	font-size: 1.6rem;
+	place-items: center;
+	border: 5px solid;
+	padding: 10px;
+}
 
-   <div class="divImg">
-       <img id="Gérant1" src="../Images/Gérant.jpg">
-       <p class="Subtitle">Marty gérant d'InforMania</p>
+.full {
+	border-image: linear-gradient(180deg, #036399, #3bb6fb) 1;
+  background-color: #222;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
 
-       <img id="salariés" src="../Images/3S.jpg">
-       <p class="Subtitle">Francis, Kevin et Aymerick</p>
-   </div>
+#Gérant1 {
+  border-radius: 50%;
+  max-width: 500px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-   <div>
-       <p class="Object">
-         <h? class="full border">Objectif</h?><br>
-         Après 1 ans d'expérience nous voulons faire d'InforMania la plus grande société de vente à distance de France.<br>
-         Via notre expertise nous serons toujours à votre disposition pour satisfaire vos besoins et vos attentes.<br>
-         Nous voulons évoluer et nous développer vers d'autres secteurs de vente.
-       </p>
-       <hr>
-     <p class="Val">
-       <h? class="full border">Valeurs</h?>
-       <div class="Table">
-         <li>Respect</li>
-       <li>Excellence</li>
-       <li>Intégrité</li>
-       <li>Qualité</li>
-       <li>Éfficacité</li>
-       <li>Innovation</li>
-     </div>
-   </p>
+#salariés {
+  border-radius: 50%;
+  max-width: 500px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
+p {
+  line-height: 2;
+  font-size: 25px;
+  color: #e45505;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid;
+}
 
- </div>
-</body>
+.Histoire {
+  margin-left: 80px;
+  font-weight: bold;
+}
 
-</html>
+.Prix {
+  margin-left: 80px;
+  font-weight: bold;
+}
+
+.Object {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.Val {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.Table {
+  column-count: 2;
+}
+li {
+  text-align: center;
+  color: #e45505;
+  font-size: 25px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+p:hover {
+  box-shadow: 10px 10px 10px 10px #036399;
+}
+
+.Subtitle {
+  border-image: linear-gradient(180deg, #036399, #3bb6fb) 1;
+  background-color: #222;
+  color: white;
+}
+
+@media screen and (max-width: 400px)
+{
+p {
+  font-size: 8.7vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.25em;
+}
+
+.container {
+  display: block;
+}
+
+.contres {
+  margin-bottom: 100px;
+}
+
+.Prix {
+margin-left: 0;
+}
+
+li{
+  font-size: 20px;
+}
+.Histoire {
+  margin-left: 0;
+}
+
+.Object {
+  margin-right: 0px;
+}
+.Val {
+  margin-right: 0px;
+}
+.full {
+  width: 90%;
+}
+}
+
+@media screen and (min-width: 410px) and (max-width: 912px) {
+  p {
+    font-size: 6vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.25em;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .contres {
+    margin-bottom: 100px;
+  }
+
+  .contentfooter .coord {
+    display: block;
+  }
+
+  .divImg {
+    text-align: center;
+    flex-direction: column;
+  }
+
+#Gérant1 {
+}
+  .Prix {
+  margin-left: 0;
+  }
+
+  li{
+    font-size: 20px;
+  }
+  .Histoire {
+    margin-left: 0;
+  }
+
+  .Object {
+    margin-right: 0px;
+  }
+  .Val {
+    margin-right: 0px;
+  }
+  .full {
+    width: 95%;
+  }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1014px) {
+  p {
+    font-size: 8,5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.25em;
+  }
+  #Gérant1 {
+    margin-top: 500px;
+  }
+
+  #salariés {
+    margin-top: 200px;
+  }
+
+  .Prix {
+  margin-left: 80px;
+  margin-bottom: 200px;
+  }
+
+  .divImg {
+    margin-top: 1000px;
+  }
+
+  li{
+    line-height: 1;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .Histoire {
+    margin-left: 80px;
+  }
+
+  .Object {
+    margin-right: 80px;
+  }
+  .Val {
+    margin-right: 80px;
+  }
+  .full {
+    width: 100%;
+  }
+  }
