@@ -96,6 +96,9 @@ p {
   font-weight: bold;
 }
 
+.Table {
+  column-count: 2;
+}
 li {
   text-align: center;
   color: #e45505;
@@ -114,7 +117,7 @@ p:hover {
   color: white;
 }
 
-@media screen and (max-width: 882px)
+@media screen and (max-width: 400px)
 {
 p {
   font-size: 8.7vw;
@@ -123,16 +126,10 @@ p {
   text-align: center;
   line-height: 1.25em;
 }
-#Gérant1 {
-  max-width: 300px;
-}
-
-#salariés {
-  max-width: 300px;
-}
 
 .container {
   display: block;
+  margin-bottom: 130px;
 }
 
 .Prix {
@@ -140,7 +137,6 @@ margin-left: 0;
 }
 
 li{
-  line-height: 1;
   font-size: 20px;
 }
 .Histoire {
@@ -158,13 +154,48 @@ li{
 }
 }
 
-@media screen and (min-width: 360px) {
-  .Prix {
-  margin-bottom: 200px;
+@media screen and (min-width: 410px) and (max-width: 882px) {
+  p {
+    font-size: 6vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.25em;
   }
+
+  .container {
+    display: block;
+    margin-bottom: 130px;
+  }
+
+  .divImg {
+    text-align: center;
+  }
+
+  .Prix {
+  margin-left: 0;
+  }
+
+  li{
+    font-size: 20px;
+  }
+  .Histoire {
+    margin-left: 0;
+  }
+
+  .Object {
+    margin-right: 0px;
+  }
+  .Val {
+    margin-right: 0px;
+  }
+  .full {
+    width: 95%;
+  }
+
 }
 
-@media only screen and (min-width: 882px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   p {
     font-size: 8,5vw;
     display: flex;
@@ -181,29 +212,26 @@ li{
   }
 
   .Prix {
-  margin-bottom: 230px;
-  margin-left: 0;
+  margin-left: 80px;
+  margin-bottom: 200px;
   }
 
-  body {
-    width: 1024px;
-  }
   li{
     line-height: 1;
     font-size: 30px;
     margin-top: 50px;
   }
   .Histoire {
-    margin-left: 0;
+    margin-left: 80px;
   }
 
   .Object {
-    margin-right: 0;
+    margin-right: 80px;
   }
   .Val {
-    margin-right: 0;
+    margin-right: 80px;
   }
   .full {
-    width: 85%;
+    width: 100%;
   }
   }
