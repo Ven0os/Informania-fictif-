@@ -1,256 +1,90 @@
-body {
-  background-image: url("../Images/fondbleu.png");
-  background-size:cover;
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/pdacceuil.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Accueil</title>
 
-}
+  </head>
+  <body>
 
-.container
-{
-    display: flex;
-    flex-direction: row;
-}
+      <div>
+        <h3 class="Titre">
+          <div class="orange">
+          VOICI LES DERNIÈRE NOUVEAUTÉ 
+        </div>
+      </div>
+      
+      
+    <div class="resp">
+        <div id="contentif">
 
-.divImg
-{
-    display: flex;
-    flex-direction: column;
-}
+          <div id="left">
+            <img src="ressources/Corps/cartemere1.jpg" alt="cartemere1" width="300px" height="300px" >
+            <p class="cartemere orange">Carte Mère Intel Processeur i5-9400F CFL <br>
+              GTO Lga1151 (2.9GHz/9M) (Bx80684I59400F)</p>
+          </div>
+          
+          <div id="right">
+            
+            <img src="Ressources/Corps/cartegraphique.jpg" alt="cartegraphique" width="300px" height="300px" />
+            <p class="cartegra orange">Carte Graphique NVIDIA GeForce RTX <br>
+              GAMING Z TRIO 3070 8Go GDDR6 LHR</p>
+            
+          </div>
+        </div>
+        
+       </p>
+      </p>	
+    </div>
 
-#Titre1 {
-  color: white;
-  font-size: 70px;
-  display: flex;
-  justify-content: center;
-  border: 4px;
-  border-style: solid;
-  border-color: #e45505;
-  background: linear-gradient(270deg, #e45505, #3bb6fb, #3bb6fb, #e45505);
-  background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-}
+<footer>
+  <div class="contentfooter">
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+    <div class="coord">
+    <p class="blue">Cordonnée</p>       
+    &nbsp 03 27 80 55 20 <br>
+    &nbsp 2 rue du général de Gaulle <br> 
+    &nbsp Cambrai 59400 <br>
+    <a href="mailto:Gpgretaweb@gmail.com">Gpgretaweb@gmail.com </a>   
+    </div>
 
-.border {
-	font-size: 1.6rem;
-	place-items: center;
-	border: 5px solid;
-	padding: 10px;
-}
+    <div class="infos">
+      <p class="blue">Infos</p>
+      Nous sommes une entrerpise <br> 
+      informatique situé a Cambrai <br>
+      Construction de PC et mobiles <br>
+      Vente de composants
+    </div>
 
-.full {
-	border-image: linear-gradient(180deg, #036399, #3bb6fb) 1;
-  background-color: #222;
-  width: 100%;
-  color: white;
-  text-align: center;
-}
+  <div class="reseau">
+    <p class="blue">Suivez-nous </p>
+    <div class="contres">
 
-#Gérant1 {
-  border-radius: 50%;
-  max-width: 500px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+      <a href="https://fr-fr.facebook.com/">
+      <img src="Ressources/footer/fb.png" alt="fb" width="55px " height="51px" class="fb"> 
+      </a>
+  
+      <a href="https://www.instagram.com/?hl=fr">
+      <img src="Ressources/footer/insta.png" width="50px" height="50px" class="insta">
+      </a>
+    
+    <a href="//twitter.com/?lang=fr">
+    <img src="Ressources/footer/twitter.png" width="48px" height="48px" class="twitter">
+    </a>
 
-#salariés {
-  border-radius: 50%;
-  max-width: 500px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+    <a href="https://www.linkedin.com/in/informania-cambrai-58803b224/">
+    <img src="Ressources/footer/linkedin.png" width="58px" height="50px" class="linkedin"> 
+    </a>
 
-p {
-  line-height: 2;
-  font-size: 25px;
-  color: #e45505;
-  font-weight: bold;
-  text-align: center;
-  border: 2px solid;
-}
+    </div>
+  </div>
 
-.Histoire {
-  margin-left: 80px;
-  font-weight: bold;
-}
+  </div>
+</footer>
 
-.Prix {
-  margin-left: 80px;
-  font-weight: bold;
-}
-
-.Object {
-  margin-right: 20px;
-  font-weight: bold;
-}
-.Val {
-  margin-right: 20px;
-  font-weight: bold;
-}
-
-.Table {
-  column-count: 2;
-}
-li {
-  text-align: center;
-  color: #e45505;
-  font-size: 25px;
-  line-height: 2;
-  font-weight: bold;
-}
-
-p:hover {
-  box-shadow: 10px 10px 10px 10px #036399;
-}
-
-.Subtitle {
-  border-image: linear-gradient(180deg, #036399, #3bb6fb) 1;
-  background-color: #222;
-  color: white;
-}
-
-@media screen and (max-width: 400px)
-{
-p {
-  font-size: 8.7vw;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  line-height: 1.25em;
-}
-
-.container {
-  display: block;
-}
-
-.contres {
-  margin-bottom: 100px;
-}
-
-.Prix {
-margin-left: 0;
-}
-
-li{
-  font-size: 20px;
-}
-.Histoire {
-  margin-left: 0;
-}
-
-.Object {
-  margin-right: 0px;
-}
-.Val {
-  margin-right: 0px;
-}
-.full {
-  width: 90%;
-}
-}
-
-@media screen and (min-width: 410px) and (max-width: 912px) {
-  p {
-    font-size: 6vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 1.25em;
-  }
-
-  .container {
-    display: block;
-  }
-
-  .contres {
-    margin-bottom: 100px;
-  }
-
-  .contentfooter .coord {
-    display: block;
-  }
-
-  .divImg {
-    text-align: center;
-    flex-direction: column;
-  }
-
-#Gérant1 {
-}
-  .Prix {
-  margin-left: 0;
-  }
-
-  li{
-    font-size: 20px;
-  }
-  .Histoire {
-    margin-left: 0;
-  }
-
-  .Object {
-    margin-right: 0px;
-  }
-  .Val {
-    margin-right: 0px;
-  }
-  .full {
-    width: 95%;
-  }
-
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1014px) {
-  p {
-    font-size: 8,5vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 1.25em;
-  }
-  #Gérant1 {
-    margin-top: 500px;
-  }
-
-  #salariés {
-    margin-top: 200px;
-  }
-
-  .Prix {
-  margin-left: 80px;
-  margin-bottom: 200px;
-  }
-
-  .divImg {
-    margin-top: 1000px;
-  }
-
-  li{
-    line-height: 1;
-    font-size: 30px;
-    margin-top: 50px;
-  }
-  .Histoire {
-    margin-left: 80px;
-  }
-
-  .Object {
-    margin-right: 80px;
-  }
-  .Val {
-    margin-right: 80px;
-  }
-  .full {
-    width: 100%;
-  }
-  }
+  </body>
+</html>
