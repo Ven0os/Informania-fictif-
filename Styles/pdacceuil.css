@@ -1,0 +1,58 @@
+
+ /* Page d'acceuil */
+
+ .resp
+ {
+	 display: flex;
+	 width: 100%;
+	 align-items: flex-start;
+	 align-content: flex-start;
+	 justify-content: center;
+ } 
+ 
+
+.Titre
+{
+    font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	
+}
+
+.cartegra 
+{
+	font-weight: bold;
+}
+
+.cartemere
+{
+	font-weight: bold;
+}
+
+.orange
+{
+	color:#fff;
+	background: linear-gradient(to right,#ff4c00,#ff7c00,#0046ff);
+	background-size: 360% 360%;
+	animation: gradient-animation 6s ease infinite;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+@keyframes gradient-animation
+{
+	0%
+	{
+		background-position: 0% 50%;
+	}
+
+	50%
+	{
+		background-position: 100% 50%;
+	}
+
+	100%
+	{
+		background-position: 0% 50%;
+	}
+}

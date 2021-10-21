@@ -1,0 +1,38 @@
+
+/* Footer */
+
+.contentfooter
+{
+  background: black;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  padding-bottom: 25px;
+  bottom: 0;
+  width: 101%;
+  flex-wrap: wrap;
+  color: aliceblue;
+}
+
+.contentfooter .blue
+{
+	color:#fff;
+	background: linear-gradient(to right,deepskyblue,blue,#02538c);
+	background-size: 360% 360%;
+	animation: gradient-animation 6s ease infinite;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.contentfooter .coord
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.contentfooter p
+{
+  text-align: center;
+}

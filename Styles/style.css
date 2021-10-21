@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+body
+{
+    font-family:'Fira Sans', sans-serif;
+    background-color:white;
+    background-image:url(../ressources/corps/backgrnd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* Cover background */
+}
+
+.blue
+{
+        /* Blue Fonts */
+    color:#fff;
+    background: linear-gradient(to right,#09a3fa,#0594e4,#3bb6fb);
+    background-size: 360% 360%;
+    animation: gradient-animation 6s ease infinite;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyframes gradient-animation
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+
+    50%
+    {
+        background-position: 100% 50%;
+    }
+
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes Gradient
+{
+    0%
+    {
+        background-position: 30% 50%;
+    }
+
+    50%
+    {
+        background-position: 25% 50%;
+    }
+
+    100%
+    {
+        background-position: 30% 50%;
+    }
+}
+
+
+.circle {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            position: absolute;
+            border-radius: 15px;
+        }
+
+ h1
+{
+	color:#fff  font-size:2vw;
+	font-weight: 900;
+	position: absolute;
+}
+
+h2
+{
+	color:#fff  font-size:1.5vw;
+	font-weight: 820;
+	position: absolute;
+}
+
+h3
+{
+	color:#fff  font-size:1vw;
+	font-weight: 750;
+}
+
+h4
+{
+	color:#fff  font-size:1vw;
+	text-align: center;
+}
+
+.bordureimg
+{
+	border: 8px solid black;
+	border-radius: 10px  display: table;
+	margin: auto;
+}
+
+.button
+{
+	display: inline-flex;
+	justify-content: center;
+	/* Y */
+	align-items: center;
+	/* X */
+	border-radius: 18px;
+	background: linear-gradient(132deg,deepskyblue,blue,#02538c);;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	transition: all 0.5s;
+	cursor: unset;
+	margin: 5px;
+}
+
+.button span
+{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.6s;
+}
+
+.button span:after
+{
+	content: '\27E9';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -19px;
+	transition: 0.6s;
+}
+
+.button:hover span
+{
+	padding-right: 25px;
+}
+
+.button:hover span:after
+{
+	opacity: 1;
+	right: 0;
+}
+
+.buttonpetit
+{
+	font-size: 16px;
+	padding: 12px;
+	min-width: 150px;
+}
+
+.buttongrand
+{
+	font-size: 20px;
+	padding: 16px;
+	min-width: 180px;
+}
+
+.buttonfooter
+{
+	font-size: 15px;
+	padding: 10px;
+	min-width: 135px;
+	text-align: center;
+}
+
+.content
+{
+margin-left: -20px;
+margin-right: -20px;
+}
+
+.circle {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            position: absolute;
+            border-radius: 15px;
+        }
+
+
